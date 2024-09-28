@@ -91,16 +91,27 @@ cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 # optimista y cree que la media estaría por encima de 6.4. Una encuesta, aplicada a 600 personas, encuentra que en promedio la ciudadanía da una calificación de 6.2
 # con una desviación estándar de 1.2.
 
-
-
-
       # a. Pruebe, calculando el valor p con R, la hipótesis nula de que la media en la
       # valoración de las carreteras es igual a 6.3 versus la hipótesis alternativa de
       # que es menor a 6.3, como aducía el crítico.
 
+Media <- 6.2
+ParámetroHipotético1 <- 6.3
+SD <- 1.2
+Muestra <- 600
 
+z <- (Media - ParámetroHipotético1) / (SD/sqrt(Muestra))
+p_value <- pnorm(z, lower.tail = TRUE)
+p_value
 
       # b. Pruebe, con R, la hipótesis nula de que la media en la valoración de las
       # carreteras es igual a 6.4 versus la hipótesis alternativa de que es mayor a 6.4,
       # como opinaba la voz optimista.
+Media <- 6.2
+ParámetroHipotético2 <- 6.4
+SD <- 1.2
+Muestra <- 600
 
+z <- (Media - ParámetroHipotético2) / (SD/sqrt(Muestra))
+p_value <- pnorm(z, lower.tail = FALSE)
+p_value
