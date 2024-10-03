@@ -25,7 +25,7 @@ Límite_Superior <- Muestra_Total_Población + Margen_Error
 
 cat("Intervalo de confianza del 95%:", Límite_Inferior, "-", Límite_Superior)
 
-Interpretación : El analisis del ingreso per capita en base a los datos proporcionados de Julio 2020 que establece un intervalo de confianza del 95%,
+#Interpretación : El analisis del ingreso per capita en base a los datos proporcionados de Julio 2020 que establece un intervalo de confianza del 95%,
 el intervalo se caulcula entre 315,060 y 337,906  colones. Esto indica que con el 95% de confianza el ingreso percapita promedio de las personas en Costa Rica
 se encuentra dentro de ese rango.
 
@@ -41,7 +41,7 @@ LímiteSuperior <- PorcentajeMuestral + MargenError
 
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
-Con un nivel de confianza del 95% podemos asegurar ue el pocentaje real de hogares que se categorizan como pobres en Costa Rica se encuentra entre el 
+#Con un nivel de confianza del 95% podemos asegurar ue el pocentaje real de hogares que se categorizan como pobres en Costa Rica se encuentra entre el 
 25,0% y el 27,4% .
 
 
@@ -62,7 +62,7 @@ LímiteSuperior <- NotaPromedio + Margen_Error
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
 Con un nivel de confianza del 95%, podemos asegurar que la calificacion real en promedio que las personas le asignan al Tribunal Supremo de elecciones 
-se encuentra entre 6.469 y 6.731 de aprobación.
+se encuentra entre 6.469 y 6.731 de aprobación, lo que representa una calificación ligeramente alta.
 
 
 # 4. Según una encuesta preelectoral de enero hecha por el CIEP (2018), la intención de voto para el Partido Restauración Nacional era de 17 % y para el Partido Acción
@@ -94,13 +94,13 @@ LímiteInferior <- IntenciónVoto_PAC - Margen_Error_PAC
 LímiteSuperior <- IntenciónVoto_PAC + Margen_Error_PAC
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
- Se puede afirmar con un 95% de confianza que la verdadera intención de voto para el PRN se encuentra entre entre 15.016% y 18.984%, meintras que 
+ #Se puede afirmar con un 95% de confianza que la verdadera intención de voto para el PRN se encuentra entre entre 15.016% y 18.984%, meintras que 
  puede afirmar que con el mismo porcentaje de confianza la verdadera intención de voto para el PAC se calcula entre 9.239% y 12.761%. 
-- X - 
+
 
 # 5. Comparando los intervalos de confianza obtenidos en el punto 4, ¿qué le parece que se puede concluir?
 
-Podemos facimente concluir que el intervalo de confianza del PRN es significativamente mas alto que el del PAC, lo que asegura que en el momento de la recoleccion de datos 
+#Podemos facimente concluir que el intervalo de confianza del PRN es significativamente mas alto que el del PAC, lo que asegura que en el momento de la recoleccion de datos 
 el PRN tenia una ventaja en cuanto a la simpatia de los votantes en comparcion al PAC, contando asi con una mayor intención de voto.Ademas el intervalo del PAC no solamente 
 es mas bajo que el del PRN, sino que tambien cuenta con un rango mas estrecho, lo que significa que entre las personas votantes existe una opinion firme y menos variable
 en cuanto a este partido.
@@ -108,7 +108,7 @@ en cuanto a este partido.
 # 6. Los resultados del censo de 2011 del INEC (2012) dicen que la población total de Costa Rica es de 4301712 personas, pero no se indica ningún margen de error.
 # Explique por qué.
 
--El censo de 2011 del INEC (2012) no indica un margen de error justamente por la naturaleza del Censo, es decir, al no tratarse de una encuesta donde se toma a una
+##-El censo de 2011 del INEC (2012) no indica un margen de error justamente por la naturaleza del Censo, es decir, al no tratarse de una encuesta donde se toma a una
 muestra de la población,sino que al contrario, la naturaleza del censo es recolectar los datos de la totalidad de la población individuo por individuo, dado esto no se presenta un margen de error, ya que 
 los datos deben ser considerados firmes, definitivos y sin variabilidad.
 
