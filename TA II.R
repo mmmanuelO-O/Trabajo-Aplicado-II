@@ -140,6 +140,8 @@ p_value
             #Hipótesis Nula: La media es 6.4
             #Hipótesis Alternativa: La media es mayor a 6.4
 
+
+
 Media <- 6.2
 ParámetroHipotético2 <- 6.4
 SD <- 1.2
@@ -149,4 +151,4 @@ z <- (Media - ParámetroHipotético2) / (SD/sqrt(Muestra))
 p_value <- pnorm(z, lower.tail = FALSE)
 p_value
 
-El valor p indica quue e
+
