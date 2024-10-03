@@ -42,7 +42,7 @@ LímiteSuperior <- PorcentajeMuestral + MargenError
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
 #Con un nivel de confianza del 95% podemos asegurar ue el pocentaje real de hogares que se categorizan como pobres en Costa Rica se encuentra entre el 
-25,0% y el 27,4% .
+25,4% y el 27,8% .
 
 
 # 3. En una escala de 0 a 10, las personas encuestadas por el Centro de Investigación y Estudios Políticos (CIEP, 2020) calificaron al Tribunal Supremo de Elecciones de
@@ -62,7 +62,7 @@ LímiteSuperior <- NotaPromedio + Margen_Error
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
 Con un nivel de confianza del 95%, podemos asegurar que la calificacion real en promedio que las personas le asignan al Tribunal Supremo de elecciones 
-se encuentra entre 6.469 y 6.731 de aprobación, lo que representa una calificación ligeramente alta.
+se encuentra entre 6.439 y 6.761 de aprobación, lo que representa una calificación ligeramente alta.
 
 
 # 4. Según una encuesta preelectoral de enero hecha por el CIEP (2018), la intención de voto para el Partido Restauración Nacional era de 17 % y para el Partido Acción
@@ -94,8 +94,8 @@ LímiteInferior <- IntenciónVoto_PAC - Margen_Error_PAC
 LímiteSuperior <- IntenciónVoto_PAC + Margen_Error_PAC
 cat("Intervalo de confianza al 95%:", LímiteInferior, "-", LímiteSuperior)
 
- #Se puede afirmar con un 95% de confianza que la verdadera intención de voto para el PRN se encuentra entre entre 15.016% y 18.984%, meintras que 
- puede afirmar que con el mismo porcentaje de confianza la verdadera intención de voto para el PAC se calcula entre 9.239% y 12.761%. 
+ #Se puede afirmar con un 95% de confianza que la verdadera intención de voto para el PRN se encuentra entre entre 14.393% y 19.606%, meintras que 
+ puede afirmar que con el mismo porcentaje de confianza la verdadera intención de voto para el PAC se calcula entre 8.829% y 13.171%. 
 
 
 # 5. Comparando los intervalos de confianza obtenidos en el punto 4, ¿qué le parece que se puede concluir?
